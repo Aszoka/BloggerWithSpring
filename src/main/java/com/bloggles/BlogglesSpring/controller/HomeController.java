@@ -26,6 +26,9 @@ public class HomeController {
 
     @RequestMapping("/user/{username}")
     public User searchUser(@PathVariable(value = "username") String username){
+        // admin: emerenc
+        //moderator: sanyi823
+        //user: Poetrist
         User searchingUser = userService.getUser("Poetrist");
         return userService.getUser(searchingUser,username);
     }
